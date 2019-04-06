@@ -1,0 +1,11 @@
+.mobile-navigation {
+  display: none;
+}
+
+.menu-open .mobile-navigation {
+  display: block;
+}
+
+.menu-open .main {
+  display: none;
+}

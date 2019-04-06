@@ -1,0 +1,13 @@
+{
+  "name": "tristanbrandt.io",
+  "homepage": "https://github.com/tristanbrandt014/tristanbrandt.io",
+  "authors": ["Tristan Brandt <me@tristanbrandt.io>"],
+  "description": "My Portfolio",
+  "main": "index.html",
+  "license": "MIT",
+  "private": true,
+  "ignore": ["**/.*", "node_modules", "bower_components", "test", "tests"],
+  "dependencies": {
+    "css-hamburgers": "^1.1.3"
+  }
+}

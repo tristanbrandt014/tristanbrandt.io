@@ -1,7 +1,10 @@
 ---
 ---
 
+@import 'base/default';
+@import 'base/header';
+@import 'layout';
 
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }

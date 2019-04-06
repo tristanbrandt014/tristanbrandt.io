@@ -1,0 +1,65 @@
+@import 'hamburgers-settings';
+@import 'css-hamburgers/_sass/hamburgers/hamburgers';
+@import 'navigation';
+@import 'variables';
+
+header {
+  background: white;
+  position: fixed;
+  z-index: 10;
+  right: 0;
+  left: 0;
+  top: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  padding: 0 5px;
+}
+
+main {
+  padding-top: $header-height-mobile;
+}
+
+@keyframes slideDown {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+.animated {
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+  will-change: transform, opacity;
+}
+
+.animated.slideDown {
+  animation-name: slideDown;
+}
+
+.animated.slideUp {
+  animation-name: slideUp;
+}
