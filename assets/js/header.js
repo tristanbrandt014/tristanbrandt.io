@@ -1,7 +1,7 @@
 (function() {
   const header = document.querySelector('header');
   const headroom = new Headroom(header, {
-    offset: 100,
+    offset: 30,
     tolerance: 5,
     classes: {
       initial: 'animated',

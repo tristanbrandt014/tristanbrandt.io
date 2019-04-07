@@ -1,0 +1,9 @@
+@import 'variables';
+footer {
+  padding: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  a {
+    color: $text-color;
+  }
+}

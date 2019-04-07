@@ -1,6 +1,7 @@
 (function() {
   const menu = document.getElementById('menu-button');
   const body = document.getElementsByTagName('body')[0];
+  const navItems = document.getElementsByClassName('nav-item');
 
   function toggleMenu() {
     const isOpen = menu.classList.contains('is-active');

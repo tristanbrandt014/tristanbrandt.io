@@ -1,0 +1,29 @@
+@import 'variables';
+
+.text-default {
+  color: $text-color;
+}
+
+.text-primary {
+  color: $text-color-primary;
+}
+
+.text-dim {
+  color: $text-color-dim;
+}
+
+.text-splash {
+  font-size: $splash-font-size;
+  font-weight: 300;
+}
+
+.text-splash-subtitle {
+  font-size: $splash-subtitle-font-size;
+  font-weight: 300;
+}
+
+.page-title {
+  font-size: 28px;
+  font-weight: 300;
+  text-align: center;
+}

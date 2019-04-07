@@ -63,3 +63,11 @@ main {
 .animated.slideUp {
   animation-name: slideUp;
 }
+
+.headroom--not-top {
+  box-shadow: $shadow-1;
+}
+
+.menu-open .headroom--not-top {
+  box-shadow: none;
+}

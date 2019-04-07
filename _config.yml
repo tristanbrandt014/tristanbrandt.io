@@ -34,6 +34,11 @@ sass:
   load_paths:
     - _sass
     - bower_components
+defaults:
+  - scope:
+      path: 'work'
+    values:
+      layout: 'work'
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
