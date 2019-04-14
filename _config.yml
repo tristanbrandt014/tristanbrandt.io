@@ -30,6 +30,7 @@ markdown: kramdown
 plugins:
   - jekyll-feed
   - jekyll-autoprefixer
+  - jekyll-paginate
 sass:
   load_paths:
     - _sass
@@ -39,6 +40,10 @@ defaults:
       path: 'work'
     values:
       layout: 'work'
+collections:
+  work:
+    output: true
+    permalink: /:collection/:name
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
