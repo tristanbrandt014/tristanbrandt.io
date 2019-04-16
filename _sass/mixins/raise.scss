@@ -1,0 +1,28 @@
+@import 'variables';
+
+@mixin raise($color: $dark, $width: 2px, $offset: 5px) {
+  transition: 0.2s ease all;
+  padding-top: $raise-padding-vertical;
+  padding-bottom: $raise-padding-vertical;
+  padding-left: 12px;
+  padding-right: 12px;
+  border: 2px solid transparent;
+  border-bottom: {
+    width: 0;
+    style: solid;
+    color: rgba(0, 0, 0, 0);
+  }
+  &:hover,
+  &:active {
+    border-bottom: {
+      color: $color;
+      width: $width;
+    }
+    padding-top: $raise-padding-vertical - $offset;
+    padding-bottom: $raise-padding-vertical + $offset - $width;
+  }
+}
+
+.raise {
+  @include raise;
+}

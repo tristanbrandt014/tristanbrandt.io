@@ -8,23 +8,35 @@ permalink: /work
   <section>
     <div class="work-items">
       {% for work in site.work %}
-      <a href="{{ work.url }}">
-        <div class="work-item">
-          <div class="work-item-image">
-            <img
-              src="/assets/img/work/{{ work.slug }}/{{ work.thumbnail }}"
-              alt="{{ work.name }} thumbnail"
-            />
-          </div>
-          <div class="work-item-content">
-            <h2>{{ work.name }}</h2>
-            {{ work.blurb | markdownify }}
-            <div class="work-item-icon">
-              <span class="lnr lnr-arrow-right"></span>
+        <a href="{{ work.url }}">
+          <div class="work-item">
+            <div class="work-item-image">
+              <img src="/assets/img/work/{{ work.slug }}/{{ work.thumbnail }}" alt="{{ work.name }} thumbnail"/>
+            </div>
+            <div class="work-item-content">
+              <div class="work-item-header">
+                <h2>{{ work.name }}</h2>
+                {% assign wc = work.content | size %}
+                {% assign read_length = wc | divided_by: 180 %}
+                <span>
+                  {% if read_length < 1 %}
+                    {{'<'}}
+                    1 min
+                  {% else %}
+                    {{read_length}}
+                    min
+                  {% endif %}
+                </span>
+              </div>
+              <div class="work-item-blurb">
+                {{ work.blurb | markdownify }}
+              </div>
+              <div class="work-item-icon">
+                <span class="lnr lnr-arrow-right"></span>
+              </div>
             </div>
           </div>
-        </div>
-      </a>
+        </a>
       {% endfor %}
     </div>
   </section>

@@ -6,7 +6,10 @@
 {% assign urlStart = page.url | slice 0, 0, 5 %}
 <a href="/work" class='nav-item {% if urlStart == "/work" %}active{% endif %}'>
   <div>work</div>
-  </a>
-<a class='nav-item {% if page.url == "/contact" %}active{% endif %}' href="/contact">
+</a>
+<a
+  class='nav-item {% if page.url == "/contact" %}active{% endif %}'
+  href="/contact"
+>
   <div>contact</div>
 </a>

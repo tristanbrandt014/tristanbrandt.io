@@ -1,5 +1,21 @@
 ---
 layout: default
 ---
-<h1>{{page.name}}</h1>
-{{content}}
+<div class="single-work">
+  <a class="breadcrumb" href="/work">
+    <span class="lnr lnr-chevron-left"></span>
+    My Work</a>
+  <h1 class="page-title">{{page.name}}</h1>
+  <p class="blurb">{{page.blurb}}</p>
+  <!-- {{content}} -->
+  <div class="siema gallery">
+    {% for image in page.gallery %}
+      <div class="gallery-item" style="background-image: url(/assets/img/work/{{page.slug}}/gallery/{{image.file}})"></div>
+    {% endfor %}
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/siema@1.5.1/dist/siema.min.js"></script>
+<script>
+  new Siema()
+</script>
